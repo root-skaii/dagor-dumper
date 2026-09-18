@@ -64,7 +64,7 @@ Both paths produce `dagor_dumper.dll` (x64). The build forces the release CRT (`
 ## Usage
 
 1. Build `dagor_dumper.dll` (Release recommended).
-2. Load the target game and get **in a match** - the ECS registration chains are available at the main menu, but the runtime layout discovery (entities, archetypes) needs an actual `EntityManager` populated with entities.
+2. Get into a scene with live entities (e.g. test range, or offline/local session) - the ECS registration chains are available at the main menu, but the runtime layout discovery (entities, archetypes) needs an actual `EntityManager` populated with entities.
 3. Inject `dagor_dumper.dll` with any standard `LoadLibrary`-based injector.
 4. The DLL waits 5 seconds (`DUMP_DELAY_MS` in `dllmain.cpp`) for static init to settle, then dumps and shows a message box with the output paths. Raise the delay, or re-inject after a level loads, if the runtime section comes back empty.
 
