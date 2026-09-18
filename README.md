@@ -1,6 +1,6 @@
 # Dagor Dumper
 
-A runtime memory analyzer for games built on Gaijin's **Dagor Engine** (daECS). It injects into the game process, walks the engine's own registration data structures and RTTI, and dumps a structural map of the ECS: component types, component slots, archetypes, live entities, entity templates, native struct field offsets, and C++ class RTTI - in the spirit of what Il2CppDumper does for Unity IL2CPP.
+A runtime memory analyzer for games built on Gaijin's **Dagor Engine** (daECS) - games for example War Thunder. It injects into the game process, walks the engine's own registration data structures and RTTI, and dumps a structural map of the ECS: component types, component slots, archetypes, live entities, entity templates, native struct field offsets, and C++ class RTTI - in the spirit of what Il2CppDumper does for Unity IL2CPP.
 
 ## Why this exists
 
