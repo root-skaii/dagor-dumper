@@ -26,17 +26,6 @@ Written to `%TEMP%`:
 - `dagor_ecs_dump_offsets.hpp` - auto-generated C++ header of typed component hash constants, for use in other tools
 - `dagor_ecs_dump_offsets.json` - the same data as structured JSON (RVAs, so it stays valid across ASLR-shuffled restarts; only `_addr` fields are specific to that run)
 
-```text
-// --- COMPONENT TYPES [Chain 1: CompileComponentTypeRegister] ---
-// Total: 228
-//  IDX   HASH        SIZE    FLAGS                NAME
-  [0020] 0xD5EFE099  904     -                       Bullet
-  [0045] 0x5F1ED526  8       BOXED                   FuelTanks
-
-// --- COMPONENT SLOTS [Chain 2: CompileComponentRegister] ---
-  0xBC84D211  0xD5EFE099  [NET  ]  Bullet : bullet_component
-```
-
 ## Build
 
 Requirements: CMake 3.20+, MSVC (x64), Visual Studio 2019/2022 or the Build Tools.
